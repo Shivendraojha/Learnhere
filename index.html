@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        nav {
+            /* margin-left: 100px; */
+            width: 100%;
+            background-color: rgb(145, 21, 21);
+        }
+
+        nav ul li {
+
+            margin-left: 100px;
+        }
+
+        ul {
+            width: 80%;
+            margin: 0% auto;
+            padding: 0;
+
+        }
+
+        ul a {
+            color: rgb(0, 0, 0);
+        }
+
+        ul li {
+            /* margin-left: 20px; */
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        ul li:hover {
+            color: white;
+            background: rgb(66, 0, 0);
+            background-color: none;
+        }
+
+        ul li a {
+            /* margin-left: 200px; */
+            color: rgb(0, 225, 255);
+            text-decoration: none;
+        }
+
+        .toggle {
+            width: 100%;
+            padding: 10px 20px;
+            background: #932b05;
+            text-align: right;
+            box-sizing: border-box;
+            color: white;
+            font-size: 30px;
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .toggle {
+                display: block;
+            }
+
+
+            ul {
+                width: 100%;
+                display: none;
+            }
+
+            ul li {
+                display: block;
+                text-align: center;
+            }
+
+
+            .active {
+                display: block;
+            }
+
+            nav {
+
+                background-color: transparent;
+                /* display: none; */
+            }
+
+            nav ul li {
+                border: 2px solid black;
+            }
+
+            .boxin img {
+                background-size: 100%;
+            }
+
+        }
+
+
+        header {
+            background-color: rgb(82, 20, 5);
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            bottom: 0px;
+            right: 0;
+            top: 0px;
+            height: 70px;
+            display: grid;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+
+        .firstpara {
+            display: inline-block;
+            position: absolute;
+            margin: 80px 0px 0px 0px;
+            width: 800px;
+
+
+
+        }
+
+        .firstpara p {
+            display: inline-block;
+            color: ivory;
+            position: absolute;
+            margin: 80px 0px 0px 0px;
+            width: 20%;
+            margin-top: 40px;
+        }
+
+
+
+        p {
+            font-size: 20px;
+        }
+
+        .content {
+            background-image: url(last2.jpg);
+            margin: 80px;
+            padding: 100px;
+            /* display: inline; */
+            border: 3px solid black;
+            border-radius: 20px;
+            height: 250px;
+            width: 250px;
+            color: black;
+            display: inline-block;
+        }
+
+
+
+
+        .main {
+            background-image: url(last2.jpg);
+            margin: 40px;
+            padding: 100px;
+            border: 3px solid black;
+            border-radius: 20px;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+            margin-left: 1000px;
+        }
+
+        .main p {
+            display: inline-block;
+            color: ivory;
+            position: absolute;
+            margin: 80px 0px 0px 0px;
+            width: 20%;
+        }
+
+        .third {
+            background-image: url(last2.jpg);
+            margin: 80px;
+            padding: 100px;
+            border: 3px solid black;
+            border-radius: 20px;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+
+        }
+
+        .third p {
+            display: inline-block;
+            color: ivory;
+            position: absolute;
+            margin: 80px 0px 0px 0px;
+            width: 20%;
+
+        }
+
+        .boxin {
+
+            /* display: block; */
+            margin: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .boxin img {
+
+            width: 47vw;
+            box-shadow: 0 5px 25px 2px black;
+            border-radius: 20px;
+
+        }
+
+        .back {
+            background-image: url("last3.jfif");
+
+            /* width: 2000px; */
+            /* height: auto; */
+        }
+
+        .boxout h6 {
+            margin: 100px;
+        }
+
+        h6 {
+            font-size: 70px;
+            color: rgb(141, 8, 8);
+            text-align: center;
+            margin-top: 100px;
+
+            /* box-shadow: 0 0 25px 0 black; */
+        }
+
+        /* .back header img {
+            display: inline-block;
+            padding-top: 18px;
+            height: 34.167px;
+            width: 34px;
+            padding-right: -31px;
+            padding-left: 50px;
+        } */
+        .footer {
+
+
+            display: inline;
+            left: 10px;
+            bottom: 25px;
+            right: 10px;
+            width: 100%;
+            background-color: rgb(71, 39, 39);
+            color: white;
+            text-align: right;
+        }
+
+        .textal {
+            text-align: center;
+            text-decoration: solid;
+        }
+
+        .last P {
+            display: inline-block;
+            margin-left: 565px;
+            padding: 20px;
+            /* text-align: center; */
+            font-size: 50px;
+            background-color: rgb(82, 21, 19);
+            color: rgb(255, 255, 255);
+            border-radius: 15px;
+            box-shadow: 25PX;
+
+        }
+
+        .last a {
+            box-shadow: 25PX;
+        }
+
+        .content .font {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .main .font {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .third .font {
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="back">
+
+    <nav>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <ul>
+            <a href="index.html">
+                <li>HOME</li>
+            </a>
+            <a href="branch.html">
+                <li>BRANCH</li>
+            </a>
+            <a href="login.html">
+                <li>LOGIN</li>
+            </a>
+            <a href="REGISTER.html">
+                <li>REGISTER</li>
+            </a>
+            <a href="https://shivendraojha.github.io/Profile/">
+                <li>CONTACT</li>
+            </a>
+
+        </ul>
+    </nav>
+
+
+    <h6 style="margin-bottom:120px ;">
+        WELCOME TO LEARNHERE
+    </h6>
+    <div class="boxout">
+
+        <div class="boxin">
+            <img src="qwe.jpg">
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br>
+
+    <hr>
+    <hr>
+    <div class="content">
+        <a href="https://onlinecourses.swayam2.ac.in/nou22_cs02/preview" display="inline-block">
+            <p class="font">INTRODUCTION TO HTML</p>
+        </a>
+
+    </div>
+    <p class="firstpara">HTML stands for Hyper Text Markup Language<br>
+        <br>
+        <br>
+        HTML is the standard markup language for creating Web pages<br>
+        <br>
+        <br>
+        HTML describes the structure of a Web page<br>
+        <br>
+        <br>
+        HTML consists of a series of elements<br>
+        <br>
+        <br>
+        HTML elements tell the browser how to display the content<br>
+        <br>
+
+        HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link",
+        etc.<br>
+    </p>
+    <hr>
+
+    <p class="firstpara">Information Technology courses are an excellent choice to help advance your career. Whether you
+        are seeking professional
+        development, new skills, or a new career, information technology courses can help you become a more competitive
+        and
+        valuable employee with important skills.<br>
+        <br>
+        <br>
+        There are academic institutions located around the world offering information technology courses through
+        programs that
+        include online and classroom education.<br>
+        <br>
+        <br>
+
+        Information technology courses cover a wide range of topics but some themes include software applications,
+        hardware,
+        programming, security, business applications, design, artificial intelligence, databases, medical records, and
+        others.<br>
+        <br>
+        <br>
+
+        Programs range from a week to a year and can offer certification or diplomas.<br>
+        <br>
+        <br>
+
+
+    </p>
+
+    <div class="main">
+
+
+        <a href="https://onlinecourses.swayam2.ac.in/cec22_cs12/preview?">
+            <p class="font">COURSES IN INFORMATION TECHNOLOGY</p>
+        </a>
+        <br>
+
+
+    </div>
+    <hr>
+
+    <div class="third">
+        <a href="https://onlinecourses.swayam2.ac.in/imb22_mg14/preview?">
+            <p class="font">INNOVATION AND INFORMATION TECHNOLOGY MANAGEMENT</p>
+        </a>
+
+
+
+    </div>
+    <p class="firstpara"><br>
+        <br>
+
+
+        <br>
+        This course is for engineering, science or management graduates who want to develop their innovation and
+        technological/engineering skills.
+        <br>
+        <br>
+
+        You will also develop project management, marketing and strategic skills. Learn about management and innovation
+        in
+        complex, global inter-organisational networks.<br>
+        <br>
+        <br>
+
+        Two of our top departments, the School of Management and the Department of Mechanical Engineering, deliver this
+        MSc.
+        This unique combination bridges the gap between the two disciplines.<br>
+        <br>
+        <br>
+    </p>
+    <br>
+    <div class="last">
+        <a href="branch.html">
+            <p style="color: rgb(255, 255, 255);"> CLICK CLICK </p>
+        </a>
+    </div>
+
+    <div class="footer">
+
+        <p style="color: brown;">copyright &copy all right reserved</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript ">
+
+        $(document).ready(function(){
+              $(".menu").click(function(){
+                  $("ul").toggleClass("active")
+              })
+
+        })
+       
+
+
+
+    </script>
+</body>
+
+</html>

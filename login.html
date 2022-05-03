@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login Page </title>
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-image: url(last3.jfif);
+            background-color: rgb(85, 18, 29);
+        }
+
+        ul {
+            margin: 0px 0px 0px 700px;
+            position: absolute;
+
+        }
+
+        header {
+            background-color: rgb(85, 18, 29);
+        }
+
+        header * {
+
+            display: inline-block;
+        }
+
+        header li {
+            display: inline-block;
+
+            margin: 10px;
+            padding: 15px;
+        }
+
+        header li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 19px;
+
+        }
+
+        button {
+            background-color: #9ca4cb;
+            width: 100%;
+            color: orange;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+
+        .container {
+            padding: 25px;
+            background-color: rgb(122, 48, 48);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav><img src="icon2.jpg" style="height: 70px;">
+            <ul>
+                <li>
+                    <a href="index.html"> HOME </a>
+                </li>
+
+                <li>
+                    <a href="branch.html"> COURSES </a>
+                </li>
+
+                <li> <a href="login.html"> LOG IN </a>
+                </li>
+                <li>
+                    <a href="REGISTER.html"> REGISTER </a>
+                </li>
+                <li>
+                    <a href="ppreabout.html"> DEV.</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <h1> LOG IN FORM</h1>
+    </center>
+    <form>
+        <div class="container">
+            <label style="color: white;"> Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label style="color: white;">Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit" style="color: white;">Login</button>
+            <input type="checkbox" checked="checked"> <a style="color: white;">Remember me</a>
+            <button type="button" class="cancelbtn" style="color: rgb(0, 0, 0);"> Cancel</button>
+            <a href="#" style="color: white;">Forgot password? </a>
+        </div>
+    </form>
+</body>
+
+</html>
